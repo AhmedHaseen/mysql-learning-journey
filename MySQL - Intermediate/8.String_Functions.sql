@@ -50,11 +50,15 @@ from employee_demographics
 -- 7. locate
 select locate('l' ,'Haseen');
 
+select first_name, locate('An', first_name)
+from employee_demographics
+;
+
 
 
 -- concat() - combine string
 select first_name, last_name,
-concat(first_name,' ' , last_name) as full_name
+concat(first_name,' ' , last_name) as Full_Name
 from
 employee_demographics
 ;
